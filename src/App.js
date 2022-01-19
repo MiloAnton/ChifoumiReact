@@ -33,14 +33,16 @@ export default function App() {
 
   return (
     <div className="App">
+      <div className="Scoreboard">
+        {scoreC} &nbsp;💻 &nbsp;&nbsp;&nbsp;&nbsp;Scoreboard&nbsp;&nbsp;&nbsp;&nbsp; 👶 &nbsp;{scoreH}
+      </div>
       <header className="App-header">
-          <div>
-            {scoreC} 💻 Scoreboard 👶 {scoreH}
-          </div>
+        <div>
           <Button value={'👊'} onClick={() => playGame(0)}/>
           <Button value={'👋'} onClick={() => playGame(1)}/>
           <Button value={'✌️'} onClick={() => playGame(2)}/>
           <Button value={'🔄'} onClick={() => resetScore()}/>
+        </div>
       </header>
     </div>
   );
