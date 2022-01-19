@@ -25,6 +25,15 @@ export default function App() {
     draggable: true,
     progress: undefined,
     });
+  const notifyE = () => toast("Human <3 Computer", {
+    position: "top-right",
+    autoClose: 3000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    });
 
 
   function resetScore() {
@@ -37,24 +46,25 @@ export default function App() {
     let random = Math.floor(Math.random() * possible.length);
     console.log(random);
     if (random == played) {
+      notifyE();
     } else if (random == 0 && played == 1) {
-        notifyW();
-        setScoreH(scoreH + 1);
+      notifyW();
+      setScoreH(scoreH + 1);
     } else if (random == 0 && played == 2) {
-        notifyL();
-        setScoreC(scoreC + 1);
+      notifyL();
+      setScoreC(scoreC + 1);
     } else if (random == 1 && played == 0) {
-        notifyL();
-        setScoreC(scoreC + 1);
+      notifyL();
+      setScoreC(scoreC + 1);
     } else if (random == 1 && played == 2) {
-        notifyW();
-        setScoreH(scoreH + 1);
+      notifyW();
+      setScoreH(scoreH + 1);
     } else if (random == 2 && played == 1) {
-        notifyL();
-        setScoreC(scoreC + 1);
+      notifyL();
+      setScoreC(scoreC + 1);
     } else if (random == 2 && played == 0) {
-        notifyW();
-        setScoreH(scoreH + 1);
+      notifyW();
+      setScoreH(scoreH + 1);
     }
   }
 
