@@ -19,12 +19,18 @@ Simply click on the link in the "**about**" section of the repository.
 Clone the repo in a folder and make sure **npm** is installed on your computer.\
 If needed, install **npm** : https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
  
-`npm start`
+```
+npm install
+npm start
+```
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-`npm run build`
+```
+npm install 
+npm run build
+```
 
 Builds the app for production to the `build` folder.\
 Your app is ready to be deployed!
